@@ -1,5 +1,5 @@
+var path = "https://gitcdn.link/repo/iljoooo/abtest/master/css/";
 
-path = "https://gitcdn.link/repo/iljoooo/abtest/master/css/"
 if (Date.now() % 2 == 0) {
     option = "A";
     var css = "style_v1.css";
