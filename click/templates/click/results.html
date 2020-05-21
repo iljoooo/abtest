@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+<title>ABTest Results Page</title>
+<script>
+var data = {{ clicks }};
+
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2", 
+	title:{
+		text: "ABTest Click Log"
+	},
+	axisY: {
+		title: "clicks"
+	},
+	data: [{        
+		type: "column",  
+        indexLabel: "{y}",
+        indexLabelFontSize: 20,
+        indexLabelFontFamily:"Lucida Console",
+        indexLabelPlacement: "outside",  
+        indexLabelOrientation: "horizontal",
+		dataPoints: [      
+			{ y: data[0], label: "Option 1" },
+			{ y: data[1], label: "Option 2" },
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
