@@ -1,13 +1,14 @@
-var path = "https://gitcdn.link/repo/iljoooo/abtest/master/css/";
+document.write("<script src=\"https://code.jquery.com/jquery-3.2.1.js\"></script>");
 
+var css = "https://gitcdn.link/repo/iljoooo/abtest/master/css/";
 if (Date.now() % 2 == 0) {
     option = "A";
-    var css = "style_v1.css";
-    document.write("<link rel=\"stylesheet\" href=\"" + path + css + "\">");
+    css += "style_v1.css";
+    document.write("<link rel=\"stylesheet\" href=\"" + css + "\">");
 } else {
     option = "B";
-    var css = "style_v2.css";
-    document.write("<link rel=\"stylesheet\" href=\"" + path + css + "\">");
+    css += "style_v2.css";
+    document.write("<link rel=\"stylesheet\" href=\"" + css + "\">");
 }
 
 function getCookie(name) {
