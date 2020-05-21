@@ -36,8 +36,8 @@ function log() {
 
     var hiddenField1 = document.createElement("input");
     hiddenField1.setAttribute("type", "hidden");
-    hiddenField1.setAttribute("name", 'csrfmiddlewaretoken');
-    hiddenField1.setAttribute("value", getCookie('csrftoken'));
+    hiddenField1.setAttribute("name", "csrfmiddlewaretoken");
+    hiddenField1.setAttribute("value", getCookie("csrftoken"));
     form.appendChild(hiddenField1);
 
     var hiddenField2 = document.createElement("input");
