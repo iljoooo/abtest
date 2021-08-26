@@ -26,5 +26,5 @@ def click(request):
     option.click += 1
     option.save()
 
-    return HttpResponseRedirect('http://147.46.67.251:37080')
+    return HttpResponseRedirect('http://147.46.67.251:37777')
 

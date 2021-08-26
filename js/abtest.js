@@ -33,7 +33,7 @@ function log() {
     var form = document.createElement("form");
     form.setAttribute("charset", "UTF-8");
     form.setAttribute("method", "Post");
-    form.setAttribute("action", "http://147.46.67.251:37090/click/click");
+    form.setAttribute("action", "http://147.46.67.251:37777/click/click");
 
     var hiddenField1 = document.createElement("input");
     hiddenField1.setAttribute("type", "hidden");
