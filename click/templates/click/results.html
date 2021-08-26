@@ -2,6 +2,7 @@
 <html>
 <head>  
 <title>ABTest Results Page</title>
+<link rel="stylesheet" href="/static/css/style_v1.css">
 <script>
 var data = {{ clicks }};
 
@@ -24,8 +25,8 @@ var chart = new CanvasJS.Chart("chartContainer", {
         indexLabelPlacement: "outside",  
         indexLabelOrientation: "horizontal",
 		dataPoints: [      
-			{ y: data[0], label: "Option 1" },
-			{ y: data[1], label: "Option 2" },
+			{ y: data[0], label: "Type A" },
+			{ y: data[1], label: "Type B" },
 		]
 	}]
 });
@@ -35,7 +36,12 @@ chart.render();
 </script>
 </head>
 <body>
-<div id="chartContainer" style="height: 370px; width: 100%;"></div>
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<div class="container-fluid">
+    <article class="tm-section-1-r tm-bg-color-8">
+        <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+        <a href="http://147.46.67.251:37777" class="tm-btn tm-btn-1 tm-link-to-services">Home</a>
+    </article>
+</div> <!-- .container -->
 </body>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </html>

@@ -1,6 +1,6 @@
 document.write("<script src=\"https://code.jquery.com/jquery-3.2.1.js\"></script>");
 
-var css = "https://gitcdn.link/repo/iljoooo/abtest/master/css/";
+var css = "/static/css/";
 if (Date.now() % 2 == 0) {
     option = "A";
     css += "style_v1.css";
